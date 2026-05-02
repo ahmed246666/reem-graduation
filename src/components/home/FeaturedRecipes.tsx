@@ -9,11 +9,14 @@ import { getRecipeImage } from '@/data/recipeImages';
 // Pick one iconic dish per country
 const featuredIds = [
   'egyptian-koshari',      // Egypt
-  'doner-kebab',            // Turkey
-  'kabsa-chicken',          // Saudi
-  'fish-and-chips-002',     // UK
-  'sy-chicken-shawarma-009',// Syria
-  'paella-de-mariscos',     // Spain
+  'greek-moussaka-001',    // Greece
+  'iraqi-masgouf',         // Iraq
+  'palestinian-maqluba',   // Palestine
+  'paella-de-mariscos',    // Spain
+  'fish-and-chips-002',    // UK
+  'nasi-goreng-001',       // Indonesia
+  'bibimbap-korea',        // Korea
+  'kibbeh-recipe'          // Lebanon
 ];
 const featured = featuredIds
   .map(id => recipes.find(r => r.id === id))

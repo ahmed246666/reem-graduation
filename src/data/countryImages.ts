@@ -1,8 +1,12 @@
 // Country image mapping - using images from public/countries folder
-// Note: Egypt, Spain, Turkey, Morocco, and Palestine are excluded to keep their original images
 export const countryImages: Record<string, string> = {
   // Available country images
-  saudi: '/countries/saudi arabia.jpeg',
+  spain: '/countries/spain.jpeg',
+  egypt: '/countries/egypt.jpeg',
+  morocco: '/countries/morocco.jpeg',
+  turkey: '/countries/turkey.jpeg',
+  palestine: '/countries/palestine.jpeg',
+  saudi: '/countries/saudi.jpeg',
   korea: '/countries/korea.jpeg',
   syria: '/countries/seria.jpeg',
   usa: '/countries/usa.jpeg',
