@@ -3,10 +3,16 @@ import { Link } from 'react-router-dom';
 import { useLanguage } from '@/context/LanguageContext';
 import { ArrowRight, Search, ChefHat, Globe, BookOpen } from 'lucide-react';
 import heroCollage from '@/assets/hero-collage-v2.jpg';
+import { getTotalRecipes, getTotalCountries, getTopCountries } from '@/data/stats';
 
 export default function HeroSection() {
   const { t, isRTL } = useLanguage();
   const sectionRef = useRef<HTMLDivElement>(null);
+  
+  // Get dynamic stats
+  const totalRecipes = getTotalRecipes();
+  const totalCountries = getTotalCountries();
+  const topCountries = getTopCountries(3);
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -38,7 +44,7 @@ export default function HeroSection() {
         {/* Badge */}
         <div data-animate className="inline-flex items-center gap-2 bg-primary/20 backdrop-blur-sm text-white border border-white/10 text-xs font-medium px-4 py-1.5 rounded-full mb-6">
           <Globe className="w-3.5 h-3.5" />
-          {t('100+ Authentic Global Recipes', '+١٠٠ وصفة عالمية أصيلة')}
+          {t(`${totalRecipes} Authentic Global Recipes`, `${totalRecipes} وصفة عالمية أصيلة`)}
         </div>
 
         {/* Title */}
@@ -51,8 +57,8 @@ export default function HeroSection() {
 
         <p data-animate className="text-base sm:text-lg text-white/80 mb-10 max-w-xl mx-auto leading-relaxed text-pretty">
           {t(
-            'Discover authentic recipes from 9 countries, carefully translated into Arabic and English. Your kitchen, no borders.',
-            'اكتشف وصفات أصيلة من ٩ دول، مترجمة بعناية إلى العربية والإنجليزية. مطبخك بلا حدود.'
+            `Discover authentic recipes from ${totalCountries} countries, carefully translated into Arabic and English. Your kitchen, no borders.`,
+            `اكتشف وصفات أصيلة من ${totalCountries} دولة، مترجمة بعناية إلى العربية والإنجليزية. مطبخك بلا حدود.`
           )}
         </p>
 
@@ -86,8 +92,8 @@ export default function HeroSection() {
         {/* Stats */}
         <div data-animate className="flex justify-center gap-8 sm:gap-14">
           {[
-            { value: '100+', en: 'Recipes', ar: 'وصفة', icon: BookOpen },
-            { value: '9', en: 'Countries', ar: 'دول', icon: Globe },
+            { value: totalRecipes.toString(), en: 'Recipes', ar: 'وصفة', icon: BookOpen },
+            { value: totalCountries.toString(), en: 'Countries', ar: 'دولة', icon: Globe },
             { value: '2', en: 'Languages', ar: 'لغتان', icon: ChefHat },
           ].map((stat) => {
             const Icon = stat.icon;
@@ -99,6 +105,19 @@ export default function HeroSection() {
               </div>
             );
           })}
+        </div>
+
+        {/* Top Countries */}
+        <div data-animate className="mt-12 text-center">
+          <h3 className="text-lg font-semibold text-white mb-4">{t('Featured Countries', 'الدول المميزة')}</h3>
+          <div className="flex justify-center gap-6 flex-wrap">
+            {topCountries.map((country) => (
+              <div key={country.countryId} className="text-center">
+                <div className="text-sm font-medium text-white/80">{country.countryName}</div>
+                <div className="text-xs text-white/60">{country.recipeCount} recipes</div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

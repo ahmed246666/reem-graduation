@@ -1,26 +1,22 @@
-// Country image mapping
-import egyptImg from '@/assets/countries/egypt.jpg';
-import turkeyImg from '@/assets/countries/turkey.jpg';
-import saudiImg from '@/assets/countries/saudi.jpg';
-import moroccoImg from '@/assets/countries/morocco.jpg';
-import italyImg from '@/assets/countries/italy.jpg';
-import koreaImg from '@/assets/countries/korea.jpg';
-import ukImg from '@/assets/countries/uk.jpg';
-import syriaImg from '@/assets/countries/syria.jpg';
-import palestineImg from '@/assets/countries/palestine.jpg';
-import usaImg from '@/assets/countries/usa.jpg';
-
+// Country image mapping - using images from public/countries folder
+// Note: Egypt, Spain, Turkey, Morocco, and Palestine are excluded to keep their original images
 export const countryImages: Record<string, string> = {
-  egypt: egyptImg,
-  turkey: turkeyImg,
-  saudi: saudiImg,
-  morocco: moroccoImg,
-  italy: italyImg,
-  korea: koreaImg,
-  uk: ukImg,
-  syria: syriaImg,
-  palestine: palestineImg,
-  usa: usaImg,
+  // Available country images
+  saudi: '/countries/saudi arabia.jpeg',
+  korea: '/countries/korea.jpeg',
+  syria: '/countries/seria.jpeg',
+  usa: '/countries/usa.jpeg',
+  greece: '/countries/greece.jpeg',
+  iraq: '/countries/iraq (2).jpeg',
+  lebanon: '/countries/lebanon.jpeg',
+  libya: '/countries/Libya.jpeg',
+  algeria: '/countries/aljeria (2).jpeg',
+  france: '/countries/france.jpeg',
+  germany: '/countries/german.jpeg',
+  india: '/countries/india (2).jpeg',
+  indonesia: '/countries/indonesia (2).jpeg',
+  thailand: '/countries/Tailand.jpeg',
+  'united-kingdom': '/countries/uk.jpeg',
 };
 
 export function getCountryImage(id: string, fallback: string): string {
