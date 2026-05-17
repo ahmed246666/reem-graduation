@@ -137,6 +137,66 @@ import shepherdsPieImg from '@/assets/recipes/Shepherds Pie.jpg';
 import stickyToffeePuddingImg from '@/assets/recipes/Sticky toffee pudding.jpg';
 import sundayRoastImg from '@/assets/recipes/Sunday roast.jpg';
 
+// Turkey images
+import turkeyDonerKebabImg from '@/assets/Turkey/Doner_Kebab.jpeg';
+import turkeyIskenderKebabImg from '@/assets/Turkey/Iskender_Kebab.jpg';
+import turkeyKofteImg from '@/assets/Turkey/Turkish Kofte.jpg';
+import turkeyMantiImg from '@/assets/Turkey/Manti (2).jpg';
+import turkeyGozlemeImg from '@/assets/Turkey/Gozleme.jpg';
+import turkeyBaklavaImg from '@/assets/Turkey/Baklava (3).jpg';
+import turkeyKunefeImg from '@/assets/Turkey/Kunefe.jpg';
+import turkeyLokumImg from '@/assets/Turkey/Turkish Delight.jpg';
+import turkeyTeaImg from '@/assets/Turkey/Turkish Tea.jpg';
+import turkeyCoffeeImg from '@/assets/Turkey/Turkish Coffee.jpg';
+
+// France images
+import franceCoqAuVinImg from '@/assets/France/Coq au vin.jpg';
+import franceBeefBourguignonImg from '@/assets/France/Beef Bourguignon.jpg';
+import franceRatatouilleImg from '@/assets/France/Ratatouille.jpg';
+import franceQuicheLorraineImg from '@/assets/France/Quiche Lorraine.jpg';
+import franceBouillabaisseImg from '@/assets/France/Bouillabaisse.jpg';
+import franceMacaronsImg from '@/assets/France/Macarons.jpg';
+import franceEclairImg from '@/assets/France/Éclair.jpg';
+import franceCremebrulee from '@/assets/France/Crème Brûlée.jpg';
+import franceCoffeeImg from '@/assets/France/French coffee.jpg';
+import franceHotChocolateImg from '@/assets/France/Hot chocolate.jpg';
+
+// Thailand images
+import thaiPadThaiImg from '@/assets/Tailand/Pad Thai.jpg';
+import thaiTomYumGoongImg from '@/assets/Tailand/Tom yum Goong.jpg';
+import thaiGreenCurryImg from '@/assets/Tailand/Green Curry.jpg';
+import thaiSomTamImg from '@/assets/Tailand/Som Tam  Green papaya salad.jpg';
+import thaiMassamanCurryImg from '@/assets/Tailand/Massaman Curry Soup with Ramen and Dumplings.jpg';
+import thaiMangoStickyRiceImg from '@/assets/Tailand/Mango Sticky Rice.jpg';
+import thaiCoconutIceCreamImg from '@/assets/Tailand/Thai Coconut Ice Cream.jpg';
+import thaiKhanomChanImg from '@/assets/Tailand/Khanom Chan.jpg';
+import thaiIcedTeaSmoothieImg from '@/assets/Tailand/Thai Iced Tea Smoothie.jpg';
+import thaiIcedCoffeeImg from '@/assets/Tailand/Thai Iced Coffee.jpg';
+
+// Syria images
+import syriaMateImg from '@/assets/سوريا/المتة.jpg';
+import syriaJallabImg from '@/assets/سوريا/الجلاب السوري.jpg';
+import syriaHalawetJibnImg from '@/assets/سوريا/حلاوة الجبن بالقشطة.jpg';
+import syriaMarookImg from '@/assets/سوريا/المعروك بالتمر.jpg';
+import syriaWarbatImg from '@/assets/سوريا/الوربات السوري.jpg';
+import syriaMujadaraImg from '@/assets/سوريا/المجدرة السورية بالبرغل.jpg';
+import syriaYabraqImg from '@/assets/سوريا/اليبرق.jpg';
+import syriaKibbehImg from '@/assets/سوريا/الكبة.jpg';
+import syriaShawarmaImg from '@/assets/سوريا/شاورما.jpeg';
+import syriaFalafelImg from '@/assets/سوريا/فلافل.jpg';
+
+// Libya images
+import libyaCouscousBoslaImg from '@/assets/ليبيا/كسكسي بالبصلة.jpg';
+import libyaMbattanImg from '@/assets/ليبيا/المبطن الليبي.jpg';
+import libyaRishdatKiskasImg from '@/assets/ليبيا/الرشدة الكسكاس.jpg';
+import libyaBazinImg from '@/assets/ليبيا/البازين.jpeg';
+import libyaUsbanImg from '@/assets/ليبيا/العصبان.jpg';
+import libyaMaqroodImg from '@/assets/ليبيا/المقروض الليبي.jpg';
+import libyaAlmondGhribaImg from '@/assets/ليبيا/الغريبة باللوز.jpg';
+import libyaSfenjImg from '@/assets/ليبيا/السفنز الليبي.jpg';
+import libyaTeaImg from '@/assets/ليبيا/الشاي_الليبي.jpeg';
+import libyaRozataImg from '@/assets/ليبيا/الروزاطة_الليبي_.jpeg';
+
 // Map recipe IDs to their generated images
 export const recipeImages: Record<string, string> = {
   // Egypt
@@ -151,16 +211,27 @@ export const recipeImages: Record<string, string> = {
   'eg-hibiscus': karkadeImg,
   'eg-sahlab': sahlabImg,
   // Turkey
-  'tr-kebab': adanaKebabImg,
-  'tr-manti': mantiImg,
-  'tr-iskender': adanaKebabImg,
-  'tr-pide': mantiImg,
-  'tr-lahmacun': adanaKebabImg,
-  'tr-baklava': baklavaImg,
-  'tr-lokum': baklavaImg,
-  'tr-sutlac': sahlabImg,
-  'tr-tea': karkadeImg,
-  'tr-ayran': sahlabImg,
+  'tr-kebab': turkeyDonerKebabImg,
+  'tr-manti': turkeyMantiImg,
+  'tr-iskender': turkeyIskenderKebabImg,
+  'tr-pide': turkeyGozlemeImg,
+  'tr-lahmacun': turkeyKofteImg,
+  'tr-baklava': turkeyBaklavaImg,
+  'tr-lokum': turkeyLokumImg,
+  'tr-sutlac': turkeyCoffeeImg,
+  'tr-tea': turkeyTeaImg,
+  'tr-ayran': turkeyCoffeeImg,
+  // Turkey (new mappings)
+  'doner-kebab': turkeyDonerKebabImg,
+  'iskender-kebab': turkeyIskenderKebabImg,
+  'turkish-kofte': turkeyKofteImg,
+  'manti': turkeyMantiImg,
+  'gozleme': turkeyGozlemeImg,
+  'baklava': turkeyBaklavaImg,
+  'turkish-kunefe': turkeyKunefeImg,
+  'turkish-lokum': turkeyLokumImg,
+  'turkish-tea': turkeyTeaImg,
+  'turkish-coffee': turkeyCoffeeImg,
   // Italy
   'it-carbonara': carbonaraImg,
   'it-risotto': carbonaraImg,
@@ -205,17 +276,28 @@ export const recipeImages: Record<string, string> = {
   'uk-trifle': tiramisuImg,
   'uk-english-tea': karkadeImg,
   'uk-ginger-beer': karkadeImg,
-  // Syria
-  'sy-shawarma': shawarmaImg,
-  'sy-kibbeh': kibbehImg,
-  'sy-fattoush': hummusImg,
-  'sy-muhammara': hummusImg,
-  'sy-kabab-halabi': shawarmaImg,
-  'sy-halawet-el-jibn': kunafaImg,
-  'sy-maamoul': basbousaImg,
-  'sy-namoura': basbousaImg,
-  'sy-jallab': karkadeImg,
-  'sy-limonana': karkadeImg,
+  // Syria (old keys)
+  'sy-shawarma': syriaShawarmaImg,
+  'sy-kibbeh': syriaKibbehImg,
+  'sy-fattoush': syriaFalafelImg,
+  'sy-muhammara': syriaWarbatImg,
+  'sy-kabab-halabi': syriaShawarmaImg,
+  'sy-halawet-el-jibn': syriaHalawetJibnImg,
+  'sy-maamoul': syriaMarookImg,
+  'sy-namoura': syriaMarookImg,
+  'sy-jallab': syriaJallabImg,
+  'sy-limonana': syriaJallabImg,
+  // Syria (new mappings)
+  'sy-mate-drink-001': syriaMateImg,
+  'sy-jallab-drink-002': syriaJallabImg,
+  'sy-halawet-el-jibn-qashta-003': syriaHalawetJibnImg,
+  'sy-marook-004': syriaMarookImg,
+  'sy-warbat-005': syriaWarbatImg,
+  'sy-mujadara-bulgur-006': syriaMujadaraImg,
+  'sy-yabraq-007': syriaYabraqImg,
+  'sy-kibbeh-008': syriaKibbehImg,
+  'sy-chicken-shawarma-009': syriaShawarmaImg,
+  'sy-falafel-010': syriaFalafelImg,
   // Palestine
   'ps-musakhan': musakhanImg,
   'ps-maqluba': maqlubaImg,
@@ -349,6 +431,39 @@ export const recipeImages: Record<string, string> = {
   'apple-crumble-pie-uk-008': appleCrumblePieImg,
   'fruit-cordial-soda-001': cordialFruitsSodaImg,
   'english-tea-001': englishTeaImg,
+  // France (new mappings)
+  'french-coq-au-vin': franceCoqAuVinImg,
+  'french-beef-bourguignon': franceBeefBourguignonImg,
+  'french-ratatouille': franceRatatouilleImg,
+  'french-quiche-lorraine': franceQuicheLorraineImg,
+  'french-bouillabaisse': franceBouillabaisseImg,
+  'french-macarons': franceMacaronsImg,
+  'french-eclair': franceEclairImg,
+  'french-creme-brulee': franceCremebrulee,
+  'french-coffee': franceCoffeeImg,
+  'french-hot-chocolate': franceHotChocolateImg,
+  // Thailand (new mappings)
+  'pad-thai': thaiPadThaiImg,
+  'tom-yum-goong': thaiTomYumGoongImg,
+  'green-curry': thaiGreenCurryImg,
+  'som-tam': thaiSomTamImg,
+  'massaman-curry-soup': thaiMassamanCurryImg,
+  'mango-sticky-rice': thaiMangoStickyRiceImg,
+  'thai-coconut-ice-cream': thaiCoconutIceCreamImg,
+  'khanom-chan': thaiKhanomChanImg,
+  'thai-iced-tea-smoothie': thaiIcedTeaSmoothieImg,
+  'thai-iced-coffee': thaiIcedCoffeeImg,
+  // Libya (new mappings)
+  'libyan-couscous-bosla': libyaCouscousBoslaImg,
+  'libyan-mbattan': libyaMbattanImg,
+  'libyan-rishdat-kiskas': libyaRishdatKiskasImg,
+  'libyan-bazin': libyaBazinImg,
+  'libyan-usban': libyaUsbanImg,
+  'libyan-maqrood': libyaMaqroodImg,
+  'libyan-almond-ghriba': libyaAlmondGhribaImg,
+  'libyan-sfenj': libyaSfenjImg,
+  'libyan-tea': libyaTeaImg,
+  'libyan-rozata': libyaRozataImg,
 };
 
 export function getRecipeImage(id: string, fallback: string): string {
