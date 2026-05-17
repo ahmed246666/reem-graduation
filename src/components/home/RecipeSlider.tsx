@@ -5,10 +5,17 @@ import { ChevronLeft, ChevronRight, Clock, Star, Play, Pause } from 'lucide-reac
 import { recipes, type Recipe } from '@/data/recipes';
 import { getRecipeImage } from '@/data/recipeImages';
 
-const sliderRecipes: Recipe[] = [
-  'egyptian-koshari', 'doner-kebab', 'kabsa-chicken', 'fish-and-chips-002', 'sy-chicken-shawarma-009',
-  'paella-de-mariscos', 'german-apple-strudel', 'greek-moussaka-001', 'pad-thai',
-].map(id => recipes.find(r => r.id === id)!).filter(Boolean);
+const sliderRecipes = [
+  'egyptian-koshari',
+  'greek-moussaka-001',
+  'iraqi-masgouf',
+  'palestinian-maqluba',
+  'paella-de-mariscos',
+  'fish-and-chips-002',
+  'nasi-goreng-001',
+  'bibimbap-korea',
+  'kibbeh-recipe'
+].map(id => recipes.find(r => r.id === id)).filter(Boolean) as Recipe[];
 
 export default function RecipeSlider() {
   const { t, isRTL } = useLanguage();

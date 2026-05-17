@@ -23,7 +23,7 @@ export default function ExploreByCuisine() {
     return () => observer.disconnect();
   }, []);
 
-  const displayCountries = countries.slice(0, 6);
+  const displayCountries = countries.slice(0, 9);
 
   return (
     <section ref={ref} className="py-24 bg-muted/50 relative" dir={isRTL ? 'rtl' : 'ltr'}>
